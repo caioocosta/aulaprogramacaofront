@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adote / Ajude - PetRescue</title>
+  
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <a href="index.html">
+        <h1>PetRescue</h1>
+    </a>
+    <button class="hamburger-menu" aria-label="Menu de Navegação">&#9776;</button>
+    
+    <nav class="main-nav">
+      <a href="index.html">Início</a>
+      <a href="projeto.html">Nossos Cães</a>
+      <a href="cadastro.html" class="btn-primary">Adote / Ajude</a>
+    </nav>
+  </header>
+
+  <main class="container grid-main">
+    <section class="col-span-12">
+      <h2>Formulário de Interesse</h2>
+      <p>Selecione se você deseja se candidatar à adoção, ser voluntário ou fazer uma doação.</p>
+      
+      <form class="form-cadastro">
+        <fieldset>
+          <legend>Tipo de Ajuda</legend>
+          <label>
+            <input type="radio" name="interesse" value="adocao" required> Quero Adotar
+          </label><br>
+          <label>
+            <input type="radio" name="interesse" value="voluntario"> Quero ser Voluntário
+          </label><br>
+          <label>
+            <input type="radio" name="interesse" value="doador"> Quero Fazer uma Doação
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Informações de Contato</legend>
+          <label>Nome Completo:
+            <input type="text" name="nome" required>
+          </label>
+          <label>E-mail:
+            <input type="email" name="email" required>
+          </label>
+          <label>Telefone:
+            <input type="tel" name="telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(11) 99999-9999" required>
+          </label>
+        </fieldset>
+        <button type="submit" class="btn-primary">Enviar Interesse</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PetRescue - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
